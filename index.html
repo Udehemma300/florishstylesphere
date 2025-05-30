@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>FlorishStyleSphere - Fashion Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color:purple;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color:green;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffe6f0;
+      padding: 10px;
+      gap: 20px;
+    }
+    nav a {
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .slider {
+      background: #ddd;
+      padding: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .slider span {
+      display: inline-block;
+      padding-right: 50px;
+      animation: slide 15s linear infinite;
+    }
+
+    @keyframes slide {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .upload-form, .post, .styles-section, .contact-info, .contact-us, .portfolio-section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    input[type="text"], input[type="email"], input[type="file"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d81b60;
+    }
+    .post img, .post video {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .styles-section h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #444;
+      text-align: center;
+    }
+    .styles-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .style-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 250px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .style-card:hover {
+      transform: scale(1.2);
+    }
+    .style-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1s;
+    }
+    .style-card h3 {
+      margin: 15px 0 5px;
+      color: #900;
+    }
+    .style-card p {
+      padding: 0 10px 15px;
+      font-size: 0.95em;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e91e63;
+      color: white;
+    }
+    .car1{
+        color:white;
+    }
+    .car2{
+      color:black;
+    }
+    .car3{
+      color:hotpink;
+    }
+    .car4{
+      color:skyblue;
+    }
+    .car5{
+      color:black;
+    }
+    .input-group{
+      color:blue;
+    }
+    h2{
+      color:blue;
+    }
+    .florish3{
+         color:orange;
+    }
+    .florish4{
+      color:green;
+    }
+    .florish5{
+      color:purple;
+    }
+    .florishblue{
+      color:blue;
+    }
+    .florishsky{
+      color:yellow;
+    }
+    .florishpink{
+      color:pink;
+    }
+    .styles-grid {
+  /* Override flex to block for slider effect */
+  display: block !important;
+  position: relative;
+  height: 100%; /* Enough for images */
+  overflow: hidden;
+}
+
+.style-card {
+  width: 100% !important;
+  margin: 0 auto 30px auto !important;
+  transition: transform 0.3s ease, opacity 0.6s ease;
+}
+.slider1{
+  color:blue;
+}
+.slider2{
+  color:black;
+}
+.slider3{
+  color:hotpink;
+}
+.slider4{
+  color:purple;
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <h1>
+  <strong class="car1">Florish</strong>
+  <strong class="car2"> Style</strong>
+  <strong class="car3"> Sphere</strong>
+</h1>
+
+    </h1>
+      <div class="car4">
+    <p>Your Daily Dose of Fashion Inspiration</p>
+  </div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#styles">Fashion Styles</a>
+    <a href="#contact">Contact Info</a>
+    <a href="#contact-us">Contact Us</a>
+  </nav>
+   <div class="slider">
+    <span class="slider1">Breaking: Market hits all-time high</span> |<span class="slider2"> Global leaders meet for summit</span> |<span class="slider3"> New tech innovations announced</span> |<span class="slider4"> Sports finals tonight</span>
+  </div>
+  <div class="container" id="home">
+    <li><a href="#styles">Fashion Styles</a></li>
+    <section id="styles" class="styles-section">
+  <h2><em class="florishblue">Florish</em> <em class="florishsky">Fashion</em> <em class="florishpink">Styles</em></h2>
+  <div class="styles-grid">
+    <div class="style-card">
+      <img src="ankara styles.jpeg" alt="Ankara Style">
+      <h3>Ankara Style</h3>
+      <p>Bold, colorful patterns with unique Nigerian flair.</p>
+    </div>
+    <div class="style-card">
+      <img src="streetwear.jpeg" alt="Streetwear">
+      <h3>Urban Streetwear</h3>
+      <p>Trendy and expressive looks for modern urban fashion lovers.</p>
+    </div>
+    <div class="style-card">
+      <img src="formalwear.jpeg" alt="Formal Wear">
+      <h3>Formal Elegance</h3>
+      <p>Elegant suits and gowns for special occasions.</p>
+    </div>
+    <!-- Add more style cards as needed -->
+  </div>
+</section>
+
+
+    <div class="upload-form">
+      <h2>Create a Blog Post</h2>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+
+        <label for="media">Upload Image/Video:</label>
+        <input type="file" id="media" name="media" accept="image/*,video/*" required>
+
+        <button type="submit">Post</button>
+      </form>
+    </div>
+
+    <div class="post">
+      <h3>Spring Street Style 2025</h3>
+      <p>Fresh, vibrant looks are taking over the streets this season...</p>
+      <img src="formalwear.jpeg" alt="Spring Look">
+    </div>
+
+    <div class="post">
+      <h3>Behind the Scenes of Fashion Week</h3>
+      <p>Exclusive backstage access and models getting ready to slay the runway.</p>
+      <video controls>
+        <source src="fashionweek.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <section id="portfolio" class="container portfolio-section">
+    <h2>Portfolio</h2>
+    <div class="post">
+      <h3>Spring Lookbook</h3>
+      <p>Check out our latest spring fashion styles.</p>
+      <img src="streetwear.jpeg" alt="Spring Fashion">
+    </div>
+    <div class="post">
+      <h3>Runway Highlight</h3>
+      <p>Highlights from the recent Paris Fashion Week.</p>
+      <video controls>
+        <source src="fashion-runway.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="styles" class="container styles-section">
+    <h2><em class="florish3"> Florish <em class="florish4"> Fashion <em class="florish5"> Styles</h2>
+    <div class="styles-grid">
+      <div class="style-card">
+        <img src="spring.jpeg" alt="Ankara Style">
+        <h3>Ankara Style</h3>
+        <p>Bold, colorful patterns with unique Nigerian flair.</p>
+      </div>
+      <div class="style-card">
+        <img src="portfolio.jpeg" alt="Streetwear">
+        <h3>Urban Streetwear</h3>
+        <p>Trendy and expressive looks for modern urban fashion lovers.</p>
+      </div>
+      <div class="style-card">
+        <img src="florish.jpeg" alt="Formal Wear">
+        <h3>Formal Elegance</h3>
+        <p>Elegant suits and gowns for special occasions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container contact-info">
+    <div class="car5">
+    <h2>Contact Information</h2>
+    <p>Email: floranneoma1@gmail.com</p>
+    <p>Phone: +234 88129025</p>
+    <p>Instagram: @florishstylesphere_blog</p>
+  </div>
+  </section>
+
+  <section id="contact-us" class="container contact-us">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mgvkggvb" method="POST">
+      <div class="input-group">
+     <i class="fa fa-user"></i>
+     <input type="text" name="name" placeholder="Your Name" required>
+       </div>
+       <div class="input-group">
+  <i class="fa fa-phone"></i>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" placeholder="Enter phone number" required>
+  </div>
+      <div class="input-group">
+     <i class="fa fa-envelope"></i>
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+      <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
+      <input type="hidden" name="_redirect" value="thankyou.html">
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="home-link">
+    <a href="update.html">← Back to Home</a>
+  </div>
+    <p>&copy; 2025 FlorishStyleSphere. All rights reserved.</p>
+  </footer>
+  <script>
+// DARK MODE TOGGLE
+const darkModeBtn = document.createElement('button');
+darkModeBtn.textContent = 'Toggle Dark Mode';
+darkModeBtn.style.position = 'fixed';
+darkModeBtn.style.bottom = '20px';
+darkModeBtn.style.right = '20px';
+darkModeBtn.style.padding = '10px 20px';
+darkModeBtn.style.backgroundColor = '#e91e63';
+darkModeBtn.style.color = '#fff';
+darkModeBtn.style.border = 'none';
+darkModeBtn.style.borderRadius = '5px';
+darkModeBtn.style.cursor = 'pointer';
+document.body.appendChild(darkModeBtn);
+
+darkModeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
+// Add dark mode CSS styles
+const style = document.createElement('style');
+style.textContent = `
+  .dark-mode {
+    background-color: #121212 !important;
+    color: #eee !important;
+  }
+  .dark-mode header {
+    background-color: #333 !important;
+  }
+  .dark-mode nav {
+    background-color: #222 !important;
+  }
+  .dark-mode nav a {
+    color: #f48fb1 !important;
+  }
+  .dark-mode .upload-form, .dark-mode .post, .dark-mode .styles-section, .dark-mode .contact-info, .dark-mode .contact-us, .dark-mode .portfolio-section {
+    background-color: #222 !important;
+    color: #eee !important;
+    box-shadow: 0 0 15px #f48fb1 !important;
+  }
+  .dark-mode button {
+    background-color: #f48fb1 !important;
+    color: #222 !important;
+  }
+`;
+document.head.appendChild(style);
+
+// SMOOTH SCROLLING for nav links
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').slice(1);
+    const targetEl = document.getElementById(targetId);
+    if(targetEl){
+      window.scrollTo({
+        top: targetEl.offsetTop - 60,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// ANIMATION ON SCROLL for style cards
+const styleCards = document.querySelectorAll('.style-card');
+
+function animateOnScroll() {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  styleCards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+
+    if(cardTop < triggerBottom){
+      card.style.opacity = '1';
+      card.style.transform = 'translateY(0)';
+      card.style.transition = 'all 0.6s ease-out';
+    } else {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(40px)';
+    }
+  });
+}
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
+
+// INITIALIZE opacity and transform for animation
+styleCards.forEach(card => {
+  card.style.opacity = '0';
+  card.style.transform = 'translateY(40px)';
+});
+
+// SIMPLE IMAGE SLIDER for .styles-grid
+let currentIndex = 0;
+const stylesGrid = document.querySelector('.styles-grid');
+const styleCardsArr = Array.from(stylesGrid.children);
+
+function showSlide(index) {
+  styleCardsArr.forEach((card, i) => {
+    card.style.display = i === index ? 'block' : 'none';
+  });
+}
+
+// Show first slide initially
+showSlide(currentIndex);
+
+// Auto slide every 4 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % styleCardsArr.length;
+  showSlide(currentIndex);
+}, 4000);
+</script>
+</body>
+</html>
